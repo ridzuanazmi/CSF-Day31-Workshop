@@ -1,0 +1,13 @@
+<h1> Inventory </h1>
+
+<table>
+    <tr *ngFor="let item of items">
+        <td>
+            <img src="/assets/images/item{{ item.name }}.jpg">
+        </td>
+        <td> Item {{ item.name }} </td>
+        <td>
+            <button type="button" (click)="addToCart(item)"> Add </button>
+        </td>
+    </tr>
+</table>

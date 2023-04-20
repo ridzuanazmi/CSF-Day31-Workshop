@@ -1,0 +1,14 @@
+<h1> My Cart </h1>
+
+<table>
+    <tr *ngFor="let c of cart; let idx = index">
+        <td>
+            <img src="/assets/images/item{{ c.name}}.jpg">
+        </td>
+        <td> Item {{ c.name }} </td>
+        <td> Quantity: {{ c.quantity }} </td>
+        <td>
+            <button type="button" (click)="removeItemFromCart(idx)"> Remove </button>
+        </td>
+    </tr>
+</table>

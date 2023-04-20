@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container app-inventory,
+.container app-shopping-card {
+    width: 50%;
+}
